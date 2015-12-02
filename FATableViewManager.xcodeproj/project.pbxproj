@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A00B03719473B91005D71C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00B03619473B91005D71C4 /* Foundation.framework */; };
+		3A00B03919473B91005D71C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00B03819473B91005D71C4 /* CoreGraphics.framework */; };
+		3A00B03B19473B91005D71C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00B03A19473B91005D71C4 /* UIKit.framework */; };
+		3A00B04119473B91005D71C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A00B03F19473B91005D71C4 /* InfoPlist.strings */; };
+		3A00B04319473B91005D71C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B04219473B91005D71C4 /* main.m */; };
+		3A00B04719473B91005D71C4 /* FAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B04619473B91005D71C4 /* FAAppDelegate.m */; };
+		3A00B04A19473B91005D71C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A00B04819473B91005D71C4 /* Main.storyboard */; };
+		3A00B04D19473B91005D71C4 /* FAMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B04C19473B91005D71C4 /* FAMasterViewController.m */; };
+		3A00B05019473B91005D71C4 /* FADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B04F19473B91005D71C4 /* FADetailViewController.m */; };
+		3A00B05219473B91005D71C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A00B05119473B91005D71C4 /* Images.xcassets */; };
+		3A00B05919473B91005D71C4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00B05819473B91005D71C4 /* XCTest.framework */; };
+		3A00B05A19473B91005D71C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00B03619473B91005D71C4 /* Foundation.framework */; };
+		3A00B05B19473B91005D71C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00B03A19473B91005D71C4 /* UIKit.framework */; };
+		3A00B06319473B92005D71C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A00B06119473B92005D71C4 /* InfoPlist.strings */; };
+		3A00B06519473B92005D71C4 /* FATableViewManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B06419473B92005D71C4 /* FATableViewManagerTests.m */; };
+		3A00B0F319473E30005D71C4 /* NSArray+FATableViewSections.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B0CB19473E30005D71C4 /* NSArray+FATableViewSections.m */; };
+		3A00B0F419473E30005D71C4 /* NSString+FetchedGroupByString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B0CD19473E30005D71C4 /* NSString+FetchedGroupByString.m */; };
+		3A00B0F519473E30005D71C4 /* FAAbstractTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B0D019473E30005D71C4 /* FAAbstractTableViewDataSource.m */; };
+		3A00B0F619473E30005D71C4 /* FACoreDataDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B0D219473E30005D71C4 /* FACoreDataDataSource.m */; };
+		3A00B0F719473E30005D71C4 /* FATableViewArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B0D419473E30005D71C4 /* FATableViewArrayDataSource.m */; };
+		3A00B0F819473E30005D71C4 /* FATableViewDynamicDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B0D719473E30005D71C4 /* FATableViewDynamicDataSource.m */; };
+		3A00B0F919473E30005D71C4 /* FATableViewDynamicDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B0D919473E30005D71C4 /* FATableViewDynamicDelegate.m */; };
+		3A00B0FA19473E30005D71C4 /* FATableViewDynamicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B0DB19473E30005D71C4 /* FATableViewDynamicItem.m */; };
+		3A00B0FB19473E30005D71C4 /* FATableViewDynamicSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B0DD19473E30005D71C4 /* FATableViewDynamicSection.m */; };
+		3A00B0FC19473E30005D71C4 /* FATableViewSimpleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B0DF19473E30005D71C4 /* FATableViewSimpleModel.m */; };
+		3A00B0FD19473E30005D71C4 /* FATableViewEntityDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B0E119473E30005D71C4 /* FATableViewEntityDataSource.m */; };
+		3A00B0FE19473E30005D71C4 /* FASearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B0E319473E30005D71C4 /* FASearchDisplayController.m */; };
+		3A00B0FF19473E30005D71C4 /* FASearchViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B0E519473E30005D71C4 /* FASearchViewViewController.m */; };
+		3A00B10019473E30005D71C4 /* FATableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B0E719473E30005D71C4 /* FATableManager.m */; };
+		3A00B10119473E30005D71C4 /* FATableManagerMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B0E919473E30005D71C4 /* FATableManagerMessageView.m */; };
+		3A00B10319473E30005D71C4 /* FATableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B0ED19473E30005D71C4 /* FATableViewDelegate.m */; };
+		3A00B10619473E72005D71C4 /* FATableViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00B10519473E72005D71C4 /* FATableViewAnimator.m */; };
+		3A543ABD1948D62600BFA207 /* FADataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A543AB71948D62600BFA207 /* FADataStore.m */; };
+		3A543ABE1948D62600BFA207 /* NSManagedObjectContext+FADataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A543ABA1948D62600BFA207 /* NSManagedObjectContext+FADataStore.m */; };
+		3A543ABF1948D62600BFA207 /* NSManagedObjectContext+Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A543ABC1948D62600BFA207 /* NSManagedObjectContext+Functions.m */; };
+		3A543AC21948D6BF00BFA207 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A543AC01948D6BF00BFA207 /* Model.xcdatamodeld */; };
+		3A543AC41948EC3700BFA207 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A543AC31948EC3700BFA207 /* CoreData.framework */; };
+		3A543AC61948F4C700BFA207 /* FATableViewManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3A543AC51948F4C700BFA207 /* FATableViewManager.podspec */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A00B05C19473B91005D71C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A00B02B19473B91005D71C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A00B03219473B91005D71C4;
+			remoteInfo = FATableViewManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A00B03319473B91005D71C4 /* FATableViewManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FATableViewManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A00B03619473B91005D71C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3A00B03819473B91005D71C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3A00B03A19473B91005D71C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3A00B03E19473B91005D71C4 /* FATableViewManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FATableViewManager-Info.plist"; sourceTree = "<group>"; };
+		3A00B04019473B91005D71C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A00B04219473B91005D71C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A00B04419473B91005D71C4 /* FATableViewManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FATableViewManager-Prefix.pch"; sourceTree = "<group>"; };
+		3A00B04519473B91005D71C4 /* FAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAAppDelegate.h; sourceTree = "<group>"; };
+		3A00B04619473B91005D71C4 /* FAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAAppDelegate.m; sourceTree = "<group>"; };
+		3A00B04919473B91005D71C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A00B04B19473B91005D71C4 /* FAMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAMasterViewController.h; sourceTree = "<group>"; };
+		3A00B04C19473B91005D71C4 /* FAMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAMasterViewController.m; sourceTree = "<group>"; };
+		3A00B04E19473B91005D71C4 /* FADetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FADetailViewController.h; sourceTree = "<group>"; };
+		3A00B04F19473B91005D71C4 /* FADetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FADetailViewController.m; sourceTree = "<group>"; };
+		3A00B05119473B91005D71C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3A00B05719473B91005D71C4 /* FATableViewManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FATableViewManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A00B05819473B91005D71C4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3A00B06019473B91005D71C4 /* FATableViewManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FATableViewManagerTests-Info.plist"; sourceTree = "<group>"; };
+		3A00B06219473B92005D71C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A00B06419473B92005D71C4 /* FATableViewManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FATableViewManagerTests.m; sourceTree = "<group>"; };
+		3A00B0CA19473E30005D71C4 /* NSArray+FATableViewSections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FATableViewSections.h"; sourceTree = "<group>"; };
+		3A00B0CB19473E30005D71C4 /* NSArray+FATableViewSections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FATableViewSections.m"; sourceTree = "<group>"; };
+		3A00B0CC19473E30005D71C4 /* NSString+FetchedGroupByString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FetchedGroupByString.h"; sourceTree = "<group>"; };
+		3A00B0CD19473E30005D71C4 /* NSString+FetchedGroupByString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FetchedGroupByString.m"; sourceTree = "<group>"; };
+		3A00B0CF19473E30005D71C4 /* FAAbstractTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAAbstractTableViewDataSource.h; sourceTree = "<group>"; };
+		3A00B0D019473E30005D71C4 /* FAAbstractTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAAbstractTableViewDataSource.m; sourceTree = "<group>"; };
+		3A00B0D119473E30005D71C4 /* FACoreDataDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FACoreDataDataSource.h; sourceTree = "<group>"; };
+		3A00B0D219473E30005D71C4 /* FACoreDataDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FACoreDataDataSource.m; sourceTree = "<group>"; };
+		3A00B0D319473E30005D71C4 /* FATableViewArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATableViewArrayDataSource.h; sourceTree = "<group>"; };
+		3A00B0D419473E30005D71C4 /* FATableViewArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FATableViewArrayDataSource.m; sourceTree = "<group>"; };
+		3A00B0D619473E30005D71C4 /* FATableViewDynamicDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATableViewDynamicDataSource.h; sourceTree = "<group>"; };
+		3A00B0D719473E30005D71C4 /* FATableViewDynamicDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FATableViewDynamicDataSource.m; sourceTree = "<group>"; };
+		3A00B0D819473E30005D71C4 /* FATableViewDynamicDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATableViewDynamicDelegate.h; sourceTree = "<group>"; };
+		3A00B0D919473E30005D71C4 /* FATableViewDynamicDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FATableViewDynamicDelegate.m; sourceTree = "<group>"; };
+		3A00B0DA19473E30005D71C4 /* FATableViewDynamicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATableViewDynamicItem.h; sourceTree = "<group>"; };
+		3A00B0DB19473E30005D71C4 /* FATableViewDynamicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FATableViewDynamicItem.m; sourceTree = "<group>"; };
+		3A00B0DC19473E30005D71C4 /* FATableViewDynamicSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATableViewDynamicSection.h; sourceTree = "<group>"; };
+		3A00B0DD19473E30005D71C4 /* FATableViewDynamicSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FATableViewDynamicSection.m; sourceTree = "<group>"; };
+		3A00B0DE19473E30005D71C4 /* FATableViewSimpleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATableViewSimpleModel.h; sourceTree = "<group>"; };
+		3A00B0DF19473E30005D71C4 /* FATableViewSimpleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FATableViewSimpleModel.m; sourceTree = "<group>"; };
+		3A00B0E019473E30005D71C4 /* FATableViewEntityDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATableViewEntityDataSource.h; sourceTree = "<group>"; };
+		3A00B0E119473E30005D71C4 /* FATableViewEntityDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FATableViewEntityDataSource.m; sourceTree = "<group>"; };
+		3A00B0E219473E30005D71C4 /* FASearchDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FASearchDisplayController.h; sourceTree = "<group>"; };
+		3A00B0E319473E30005D71C4 /* FASearchDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FASearchDisplayController.m; sourceTree = "<group>"; };
+		3A00B0E419473E30005D71C4 /* FASearchViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FASearchViewViewController.h; sourceTree = "<group>"; };
+		3A00B0E519473E30005D71C4 /* FASearchViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FASearchViewViewController.m; sourceTree = "<group>"; };
+		3A00B0E619473E30005D71C4 /* FATableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATableManager.h; sourceTree = "<group>"; };
+		3A00B0E719473E30005D71C4 /* FATableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FATableManager.m; sourceTree = "<group>"; };
+		3A00B0E819473E30005D71C4 /* FATableManagerMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATableManagerMessageView.h; sourceTree = "<group>"; };
+		3A00B0E919473E30005D71C4 /* FATableManagerMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FATableManagerMessageView.m; sourceTree = "<group>"; };
+		3A00B0EC19473E30005D71C4 /* FATableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATableViewDelegate.h; sourceTree = "<group>"; };
+		3A00B0ED19473E30005D71C4 /* FATableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FATableViewDelegate.m; sourceTree = "<group>"; };
+		3A00B0EF19473E30005D71C4 /* FATableViewCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATableViewCellProtocol.h; sourceTree = "<group>"; };
+		3A00B0F019473E30005D71C4 /* FATableViewDataSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATableViewDataSourceDelegate.h; sourceTree = "<group>"; };
+		3A00B0F119473E30005D71C4 /* FATableViewDataSourceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATableViewDataSourceProtocol.h; sourceTree = "<group>"; };
+		3A00B0F219473E30005D71C4 /* FATableViewDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATableViewDelegateProtocol.h; sourceTree = "<group>"; };
+		3A00B10419473E72005D71C4 /* FATableViewAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATableViewAnimator.h; sourceTree = "<group>"; };
+		3A00B10519473E72005D71C4 /* FATableViewAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FATableViewAnimator.m; sourceTree = "<group>"; };
+		3A543AB51948D62600BFA207 /* FADataStore-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FADataStore-Prefix.pch"; sourceTree = "<group>"; };
+		3A543AB61948D62600BFA207 /* FADataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FADataStore.h; sourceTree = "<group>"; };
+		3A543AB71948D62600BFA207 /* FADataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FADataStore.m; sourceTree = "<group>"; };
+		3A543AB81948D62600BFA207 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		3A543AB91948D62600BFA207 /* NSManagedObjectContext+FADataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+FADataStore.h"; sourceTree = "<group>"; };
+		3A543ABA1948D62600BFA207 /* NSManagedObjectContext+FADataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+FADataStore.m"; sourceTree = "<group>"; };
+		3A543ABB1948D62600BFA207 /* NSManagedObjectContext+Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Functions.h"; sourceTree = "<group>"; };
+		3A543ABC1948D62600BFA207 /* NSManagedObjectContext+Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Functions.m"; sourceTree = "<group>"; };
+		3A543AC11948D6BF00BFA207 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		3A543AC31948EC3700BFA207 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3A543AC51948F4C700BFA207 /* FATableViewManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FATableViewManager.podspec; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A00B03019473B91005D71C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A543AC41948EC3700BFA207 /* CoreData.framework in Frameworks */,
+				3A00B03919473B91005D71C4 /* CoreGraphics.framework in Frameworks */,
+				3A00B03B19473B91005D71C4 /* UIKit.framework in Frameworks */,
+				3A00B03719473B91005D71C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A00B05419473B91005D71C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A00B05919473B91005D71C4 /* XCTest.framework in Frameworks */,
+				3A00B05B19473B91005D71C4 /* UIKit.framework in Frameworks */,
+				3A00B05A19473B91005D71C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A00B02A19473B91005D71C4 = {
+			isa = PBXGroup;
+			children = (
+				3A543AC51948F4C700BFA207 /* FATableViewManager.podspec */,
+				3A543AC01948D6BF00BFA207 /* Model.xcdatamodeld */,
+				3A543AB41948D62600BFA207 /* FADataStore */,
+				3A00B06E19473C1A005D71C4 /* Classes */,
+				3A00B03C19473B91005D71C4 /* FATableViewManager */,
+				3A00B05E19473B91005D71C4 /* FATableViewManagerTests */,
+				3A00B03519473B91005D71C4 /* Frameworks */,
+				3A00B03419473B91005D71C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A00B03419473B91005D71C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A00B03319473B91005D71C4 /* FATableViewManager.app */,
+				3A00B05719473B91005D71C4 /* FATableViewManagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A00B03519473B91005D71C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A543AC31948EC3700BFA207 /* CoreData.framework */,
+				3A00B03619473B91005D71C4 /* Foundation.framework */,
+				3A00B03819473B91005D71C4 /* CoreGraphics.framework */,
+				3A00B03A19473B91005D71C4 /* UIKit.framework */,
+				3A00B05819473B91005D71C4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A00B03C19473B91005D71C4 /* FATableViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				3A00B04519473B91005D71C4 /* FAAppDelegate.h */,
+				3A00B04619473B91005D71C4 /* FAAppDelegate.m */,
+				3A00B04819473B91005D71C4 /* Main.storyboard */,
+				3A00B04B19473B91005D71C4 /* FAMasterViewController.h */,
+				3A00B04C19473B91005D71C4 /* FAMasterViewController.m */,
+				3A00B04E19473B91005D71C4 /* FADetailViewController.h */,
+				3A00B04F19473B91005D71C4 /* FADetailViewController.m */,
+				3A00B05119473B91005D71C4 /* Images.xcassets */,
+				3A00B03D19473B91005D71C4 /* Supporting Files */,
+			);
+			path = FATableViewManager;
+			sourceTree = "<group>";
+		};
+		3A00B03D19473B91005D71C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A00B03E19473B91005D71C4 /* FATableViewManager-Info.plist */,
+				3A00B03F19473B91005D71C4 /* InfoPlist.strings */,
+				3A00B04219473B91005D71C4 /* main.m */,
+				3A00B04419473B91005D71C4 /* FATableViewManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A00B05E19473B91005D71C4 /* FATableViewManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A00B06419473B92005D71C4 /* FATableViewManagerTests.m */,
+				3A00B05F19473B91005D71C4 /* Supporting Files */,
+			);
+			path = FATableViewManagerTests;
+			sourceTree = "<group>";
+		};
+		3A00B05F19473B91005D71C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A00B06019473B91005D71C4 /* FATableViewManagerTests-Info.plist */,
+				3A00B06119473B92005D71C4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A00B06E19473C1A005D71C4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3A00B10419473E72005D71C4 /* FATableViewAnimator.h */,
+				3A00B10519473E72005D71C4 /* FATableViewAnimator.m */,
+				3A00B0EE19473E30005D71C4 /* Protocols */,
+				3A00B0C919473E30005D71C4 /* Categories */,
+				3A00B0CE19473E30005D71C4 /* DataSources */,
+				3A00B0E219473E30005D71C4 /* FASearchDisplayController.h */,
+				3A00B0E319473E30005D71C4 /* FASearchDisplayController.m */,
+				3A00B0E419473E30005D71C4 /* FASearchViewViewController.h */,
+				3A00B0E519473E30005D71C4 /* FASearchViewViewController.m */,
+				3A00B0E619473E30005D71C4 /* FATableManager.h */,
+				3A00B0E719473E30005D71C4 /* FATableManager.m */,
+				3A00B0E819473E30005D71C4 /* FATableManagerMessageView.h */,
+				3A00B0E919473E30005D71C4 /* FATableManagerMessageView.m */,
+				3A00B0EC19473E30005D71C4 /* FATableViewDelegate.h */,
+				3A00B0ED19473E30005D71C4 /* FATableViewDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3A00B0C919473E30005D71C4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3A00B0CA19473E30005D71C4 /* NSArray+FATableViewSections.h */,
+				3A00B0CB19473E30005D71C4 /* NSArray+FATableViewSections.m */,
+				3A00B0CC19473E30005D71C4 /* NSString+FetchedGroupByString.h */,
+				3A00B0CD19473E30005D71C4 /* NSString+FetchedGroupByString.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		3A00B0CE19473E30005D71C4 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				3A00B0CF19473E30005D71C4 /* FAAbstractTableViewDataSource.h */,
+				3A00B0D019473E30005D71C4 /* FAAbstractTableViewDataSource.m */,
+				3A00B0D119473E30005D71C4 /* FACoreDataDataSource.h */,
+				3A00B0D219473E30005D71C4 /* FACoreDataDataSource.m */,
+				3A00B0D319473E30005D71C4 /* FATableViewArrayDataSource.h */,
+				3A00B0D419473E30005D71C4 /* FATableViewArrayDataSource.m */,
+				3A00B0D519473E30005D71C4 /* FATableViewDynamicDataSource */,
+				3A00B0E019473E30005D71C4 /* FATableViewEntityDataSource.h */,
+				3A00B0E119473E30005D71C4 /* FATableViewEntityDataSource.m */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		3A00B0D519473E30005D71C4 /* FATableViewDynamicDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				3A00B0D619473E30005D71C4 /* FATableViewDynamicDataSource.h */,
+				3A00B0D719473E30005D71C4 /* FATableViewDynamicDataSource.m */,
+				3A00B0D819473E30005D71C4 /* FATableViewDynamicDelegate.h */,
+				3A00B0D919473E30005D71C4 /* FATableViewDynamicDelegate.m */,
+				3A00B0DA19473E30005D71C4 /* FATableViewDynamicItem.h */,
+				3A00B0DB19473E30005D71C4 /* FATableViewDynamicItem.m */,
+				3A00B0DC19473E30005D71C4 /* FATableViewDynamicSection.h */,
+				3A00B0DD19473E30005D71C4 /* FATableViewDynamicSection.m */,
+				3A00B0DE19473E30005D71C4 /* FATableViewSimpleModel.h */,
+				3A00B0DF19473E30005D71C4 /* FATableViewSimpleModel.m */,
+			);
+			path = FATableViewDynamicDataSource;
+			sourceTree = "<group>";
+		};
+		3A00B0EE19473E30005D71C4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3A00B0EF19473E30005D71C4 /* FATableViewCellProtocol.h */,
+				3A00B0F019473E30005D71C4 /* FATableViewDataSourceDelegate.h */,
+				3A00B0F119473E30005D71C4 /* FATableViewDataSourceProtocol.h */,
+				3A00B0F219473E30005D71C4 /* FATableViewDelegateProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3A543AB41948D62600BFA207 /* FADataStore */ = {
+			isa = PBXGroup;
+			children = (
+				3A543AB51948D62600BFA207 /* FADataStore-Prefix.pch */,
+				3A543AB61948D62600BFA207 /* FADataStore.h */,
+				3A543AB71948D62600BFA207 /* FADataStore.m */,
+				3A543AB81948D62600BFA207 /* Macros.h */,
+				3A543AB91948D62600BFA207 /* NSManagedObjectContext+FADataStore.h */,
+				3A543ABA1948D62600BFA207 /* NSManagedObjectContext+FADataStore.m */,
+				3A543ABB1948D62600BFA207 /* NSManagedObjectContext+Functions.h */,
+				3A543ABC1948D62600BFA207 /* NSManagedObjectContext+Functions.m */,
+			);
+			path = FADataStore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A00B03219473B91005D71C4 /* FATableViewManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A00B06819473B92005D71C4 /* Build configuration list for PBXNativeTarget "FATableViewManager" */;
+			buildPhases = (
+				3A00B02F19473B91005D71C4 /* Sources */,
+				3A00B03019473B91005D71C4 /* Frameworks */,
+				3A00B03119473B91005D71C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FATableViewManager;
+			productName = FATableViewManager;
+			productReference = 3A00B03319473B91005D71C4 /* FATableViewManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A00B05619473B91005D71C4 /* FATableViewManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A00B06B19473B92005D71C4 /* Build configuration list for PBXNativeTarget "FATableViewManagerTests" */;
+			buildPhases = (
+				3A00B05319473B91005D71C4 /* Sources */,
+				3A00B05419473B91005D71C4 /* Frameworks */,
+				3A00B05519473B91005D71C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A00B05D19473B91005D71C4 /* PBXTargetDependency */,
+			);
+			name = FATableViewManagerTests;
+			productName = FATableViewManagerTests;
+			productReference = 3A00B05719473B91005D71C4 /* FATableViewManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A00B02B19473B91005D71C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Rasmus Kildevæld";
+				TargetAttributes = {
+					3A00B05619473B91005D71C4 = {
+						TestTargetID = 3A00B03219473B91005D71C4;
+					};
+				};
+			};
+			buildConfigurationList = 3A00B02E19473B91005D71C4 /* Build configuration list for PBXProject "FATableViewManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A00B02A19473B91005D71C4;
+			productRefGroup = 3A00B03419473B91005D71C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A00B03219473B91005D71C4 /* FATableViewManager */,
+				3A00B05619473B91005D71C4 /* FATableViewManagerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A00B03119473B91005D71C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A00B05219473B91005D71C4 /* Images.xcassets in Resources */,
+				3A00B04119473B91005D71C4 /* InfoPlist.strings in Resources */,
+				3A00B04A19473B91005D71C4 /* Main.storyboard in Resources */,
+				3A543AC61948F4C700BFA207 /* FATableViewManager.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A00B05519473B91005D71C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A00B06319473B92005D71C4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A00B02F19473B91005D71C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A00B0FD19473E30005D71C4 /* FATableViewEntityDataSource.m in Sources */,
+				3A00B0FC19473E30005D71C4 /* FATableViewSimpleModel.m in Sources */,
+				3A00B05019473B91005D71C4 /* FADetailViewController.m in Sources */,
+				3A00B0F519473E30005D71C4 /* FAAbstractTableViewDataSource.m in Sources */,
+				3A543ABD1948D62600BFA207 /* FADataStore.m in Sources */,
+				3A00B0F719473E30005D71C4 /* FATableViewArrayDataSource.m in Sources */,
+				3A00B0F319473E30005D71C4 /* NSArray+FATableViewSections.m in Sources */,
+				3A543ABF1948D62600BFA207 /* NSManagedObjectContext+Functions.m in Sources */,
+				3A00B04D19473B91005D71C4 /* FAMasterViewController.m in Sources */,
+				3A543ABE1948D62600BFA207 /* NSManagedObjectContext+FADataStore.m in Sources */,
+				3A00B0FA19473E30005D71C4 /* FATableViewDynamicItem.m in Sources */,
+				3A00B0F419473E30005D71C4 /* NSString+FetchedGroupByString.m in Sources */,
+				3A00B10019473E30005D71C4 /* FATableManager.m in Sources */,
+				3A00B0FB19473E30005D71C4 /* FATableViewDynamicSection.m in Sources */,
+				3A00B10119473E30005D71C4 /* FATableManagerMessageView.m in Sources */,
+				3A00B10319473E30005D71C4 /* FATableViewDelegate.m in Sources */,
+				3A00B04319473B91005D71C4 /* main.m in Sources */,
+				3A00B0FF19473E30005D71C4 /* FASearchViewViewController.m in Sources */,
+				3A00B0F919473E30005D71C4 /* FATableViewDynamicDelegate.m in Sources */,
+				3A00B0F619473E30005D71C4 /* FACoreDataDataSource.m in Sources */,
+				3A00B10619473E72005D71C4 /* FATableViewAnimator.m in Sources */,
+				3A00B0FE19473E30005D71C4 /* FASearchDisplayController.m in Sources */,
+				3A543AC21948D6BF00BFA207 /* Model.xcdatamodeld in Sources */,
+				3A00B04719473B91005D71C4 /* FAAppDelegate.m in Sources */,
+				3A00B0F819473E30005D71C4 /* FATableViewDynamicDataSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A00B05319473B91005D71C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A00B06519473B92005D71C4 /* FATableViewManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A00B05D19473B91005D71C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A00B03219473B91005D71C4 /* FATableViewManager */;
+			targetProxy = 3A00B05C19473B91005D71C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A00B03F19473B91005D71C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A00B04019473B91005D71C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3A00B04819473B91005D71C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A00B04919473B91005D71C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A00B06119473B92005D71C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A00B06219473B92005D71C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A00B06619473B92005D71C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A00B06719473B92005D71C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A00B06919473B92005D71C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FATableViewManager/FATableViewManager-Prefix.pch";
+				INFOPLIST_FILE = "FATableViewManager/FATableViewManager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3A00B06A19473B92005D71C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FATableViewManager/FATableViewManager-Prefix.pch";
+				INFOPLIST_FILE = "FATableViewManager/FATableViewManager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3A00B06C19473B92005D71C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FATableViewManager.app/FATableViewManager";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FATableViewManager/FATableViewManager-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FATableViewManagerTests/FATableViewManagerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3A00B06D19473B92005D71C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FATableViewManager.app/FATableViewManager";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FATableViewManager/FATableViewManager-Prefix.pch";
+				INFOPLIST_FILE = "FATableViewManagerTests/FATableViewManagerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A00B02E19473B91005D71C4 /* Build configuration list for PBXProject "FATableViewManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A00B06619473B92005D71C4 /* Debug */,
+				3A00B06719473B92005D71C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A00B06819473B92005D71C4 /* Build configuration list for PBXNativeTarget "FATableViewManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A00B06919473B92005D71C4 /* Debug */,
+				3A00B06A19473B92005D71C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A00B06B19473B92005D71C4 /* Build configuration list for PBXNativeTarget "FATableViewManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A00B06C19473B92005D71C4 /* Debug */,
+				3A00B06D19473B92005D71C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3A543AC01948D6BF00BFA207 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3A543AC11948D6BF00BFA207 /* Model.xcdatamodel */,
+			);
+			currentVersion = 3A543AC11948D6BF00BFA207 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3A00B02B19473B91005D71C4 /* Project object */;
+}
